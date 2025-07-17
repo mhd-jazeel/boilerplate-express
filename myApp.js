@@ -16,6 +16,14 @@ app.get("/json", (req, res) => {
   });
 });
 
+app.get("/json", (req, res) => {
+  res.json({
+    message: "Hello json"
+  });
+});
+
+
+
 
 
 
