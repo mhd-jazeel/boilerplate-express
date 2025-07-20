@@ -24,7 +24,12 @@ app.get("/json", (req, res) => {
 module.exports = app;
 
 
-
+app.use(function middleware(req, res, next) {
+  // Do something
+  // Call the next function in line:
+  next();
+});
+var string = req.method + " " + req.path + " - " + req.ip;
 
 
 
